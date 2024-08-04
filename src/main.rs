@@ -1,3 +1,11 @@
+const GAMES = "abcde crane hello somya"
+
+
 fn main() {
-    println!("Hello, world!");
+    let Guesser = Naive::new();
+    for answer in GAMES.split_whitespace(){
+        play(answer, Guesser);
+    }
 }
+
+
